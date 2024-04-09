@@ -1,1 +1,123 @@
 
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>双赢赢 路线. v1.0.</title>
+    <link href="https://cdn.staticfile.org/bootstrap/5.2.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.staticfile.org/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            font-size: 12px;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main class="container">
+        <div class="mb-3 text-center">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAABuCAYAAABiHVxtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4dpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDkuMS1jMDAxIDc5LjE0NjI4OTk3NzcsIDIwMjMvMDYvMjUtMjM6NTc6MTQgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6ODViNzg4YjYtNGQ1ZC00ZDc4LWEwMmMtZDRmZGU1ODc0ZWFiIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjEzQjE3Rjc3RUMyQzExRUVBREE5OTNGRDdEMkEzQTkyIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjEzQjE3Rjc2RUMyQzExRUVBREE5OTNGRDdEMkEzQTkyIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCAyMi40IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6YmIwYTE4ZjctMmE2MS00OGFjLWFlODAtZmY0ZDYzOTJlNDBlIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MTYwMTQ2MDgtYmQ5My00NDQzLThjMjAtYjk2ODZmNGUzMjE4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+oQq9hgAABj1JREFUeNrsnd2R2jwUhp3MNuAWyP3esCWYEtgSoAQoYSlhKSGUsC4hvsl93IJL4LMyhx0+B0lHNl4s+XlmGDIJFgf5vOdHlp1v5/M5A4DbfGcKABAIAAIBQCAACAQAgQAgEAAEAoBAABAIACAQAAQCgEAAEAgAAgFAIAAIBACBACAQAAQCAAgEAIEAIBAABAKAQAAQCAACAUAgAAgEABAIAAIBQCAACAQAgQAgEAAEAoBAABAIAAIBAAQCgEAAEAjAl/D0yC9/fn5etG/rOw97+v37dz3C2Md23GaEOVi2b+a1kXcb2/b7j1NzoNjt9/HtfD5PYZJ/eSY3BOPELyKSe/64qh3zpWN33r4V4hzFxM+1mZfX9jeUqdg/pxIrv/NYa8kg92Qp0fITk1Ha16n9Y5lNn7wbhGK3f04CWYww5vILhbzM4qBJ1P50BdJG5WKkiby76BzpPRYHqxO1P90eROrg0BNkPv/m+PeViCS0dNs5avG6FciPgb3U3vQyj3As05PdoRectP1j8PTokGDq4G5t3+Gf1SPP5/9GeulBCsdnDjcc5G1g9PIJ/e1B02wc+zAD+9MTiJRYbyGOnLlXXC4Rbu0Yt7RMuMtBSs/vmHKZUinOQ9T2JysQj1NWA45ZhIyr6IV8GSTPprsapMl+sdufrEDykFULKZ1yxWQuAldDlgNP0mKiDtYo6/fY7Z9lBjHXHvJLDyIN/U9lOnZlhOK6xJLyYufpa3xpfpeNs1w9FO3V69jtH4XvExeIEcSm0yQuPZmhUlwkLC4l1ZXoXFnppIzAMZcnsdufbAapPNF+1zrxUYSy8Yy1kmxjVsZqz0nfSEnx4fmcGWerWGjIfMIdMcDkAxv0qO1PXSAHj0DM5L1n/o2H204ZdMzcy5JmO8pPRUZ6VWxSXCiCwFjLlO93cLDY7U9XIHLNovSIxCeO442dokepq/MB4+4VvYdvoeHS8zxiM2Cj3IEcu/1J9yBDG7GyncTtDeE1A6PePmB79lR3wlYzsT9tgciO0j7NmDnm1SO8PhHoZLlA2Weh4ZGUM7F/NCZxP4g0ihupR9XpV5ryyjPuu6K570atlSa199xoWfV1SClHQ7/Tuo8pdvtnJRA5YX8y/XLjq2Qe35hmvD8BontRbuwzTvKrx8/8EWBPN5qarPYReNzNO/lit39uPUhoL7LXiEOiVh0w7mtAtOoTReus//WGvpG7StT+WQpEU3PWgf2BdpKPgbdz9nWwvvV+06eZdpSgsds/L4HIFW1ND7IIqWOllNBs016LDVoKixPsHRmrtDhYKcddXjaRF5asu7cscpQJ2/8lPGXT4T0gOq01kycOb2pejePnMu5ROe7C4mCZ4/say2+8rs1XDvtsUb1y/Fty9s8ug8iNSiGP6Nn49lsFiuPCbkD2yMTpXL/Fdiuwr663lTaVfNfCMkadqP3zEYgs7+56HOo7xrex0Va+aZaEl45Fhn1mv/bie2iCy5EKR8mT36lBj8X+eQhE+oP3nodbs0j790Y8m57j7gYIpHaUE64Gd+NZJXI5nrV86fGQiVjsT78HEef+GDjMOutsJ5EMMOTe6b+LAJ6TUziyVuaJhqVjnKITrbURtAksT2K3P+0MorwHo1I04rvrlSflitVRMfk7h+2FI/qWjrHNkxkP7ctcpV8pbMivPuuan5VtRerWfeax2z+XEsu3YtXIxPmud3zeUKVsyqvMvYz5GQkdjmSz+yBjl74VGe32l/Zza0fEr+TJiKWlrLHdJRm7/WkLRLlitbqaPG0W8YnjsneryXRX1jeBAikle21cDia/f2PJbP98l+O5YZViFalK0P40exCJyJcngbuc/nTjxidNY914xt1fNiDKs7j2medGrc798Jenxd8Sdy0Py3Y9h6tyrNiZq/jbG8/yWjucpPSUTP9zsNjtT14gV9ngEHic2XN1GsGeg9YWqYVzOWErR5O58gxV3/rM1YLA9kY0tR1TXzmRq86P3v5HMqndvABTg/9hCgCBACAQAAQCgEAAEAgAAgFAIAAIBACBAAACAUAgAAgEAIEAIBAABAKAQAAQCAACAUAgAIBAABAIAAIBQCAACAQAgQAgEAAEAoBAAACBACAQAAQCgEAAEAjA1PhPgAEAwuLGqnTSH94AAAAASUVORK5CYII=">
+        </div>
+        <div id="block-selLines">
+
+        </div>
+    </main>
+    <iframe style=" width:100%; height:100%; display:none;"></iframe>
+    <script type="text/html" id="tpl-lines">
+        <form id="myform">
+            <h3 class="mb-2">选择可用线路</h3>
+            <select class="form-select mb-2" size="5" id="domainLines">
+            <option selected>请点击选择对应产品的可用线路</option>
+                {{each $data}}
+                <option value="{{$value.host}}">{{$value.title}}</option>
+                {{/each}}
+            </select>
+            <button class="w-100 btn btn-lg btn-primary" type="button" onclick="enter(this);">进 入 --></button>
+        </form>
+    </script>
+    <script src="https://cdn.staticfile.org/art-template/4.13.2/lib/template-web.min.js"></script>
+    <script src="https://cdn.staticfile.org/zepto/1.2.0/zepto.min.js"></script>
+    <script src="https://cdn.staticfile.org/bootstrap/5.2.2/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var selectLine = getCookie('selline');
+            if (selectLine.length > 0) {
+                $.ajax({
+                    type: "get",
+                    cache: false,
+                    url: selectLine + "/Api/ApiWeb/LoginCheckStateCb",
+                    dataType: "jsonp",
+                    jsonp: 'cb',
+                    success: function (data) {
+                        if (data.Code == 1) {
+                            $("main").hide();
+                            $("iframe").attr("src", selectLine + '/User').show();
+                        }
+                    }
+                });
+            }
+            $.ajax({
+                type: "get",
+                cache: false,
+                url: "https://mclarenapp.github.io/SH_Lines/syy_alist.txt",
+                dataType: "jsonp"
+            });
+        });
+        function JsonpData(data) {
+            var html = $(template("tpl-lines", data.lines));
+            $("#block-selLines").html(html[0]);
+        }
+        function enter(obj) {
+            var domainLines = $("#domainLines");
+            var selectLine = domainLines.val();
+            addCookie('selline', selectLine, 240, "", "");
+            $("main").hide();
+            $("iframe").attr("src", selectLine).show();
+        }
+        function getCookie(objName) {
+            var value = "";
+            var arrStr = document.cookie.split("; ");
+            for (var i = 0; i < arrStr.length; i++) {
+                var temp = arrStr[i].split("=");
+                if (temp.length == 2) {
+                    if (temp[0] == objName) {
+                        value = unescape(temp[1]);
+                        break;
+                    }
+                }
+            }
+            return value;
+        }
+        function addCookie(objName, objValue, objHours, objDomain, objPath) {
+            var str = objName + "=" + escape(objValue);
+            if (objHours > 0) {
+                var date = new Date();
+                var ms = objHours * 3600 * 1000;
+                date.setTime(date.getTime() + ms);
+                str += "; expires=" + date.toGMTString();
+            }
+            if (objDomain != "") {
+                str += "; domain=" + objDomain;
+            }
+            if (objPath != "") {
+                str += "; path=" + objPath;
+            }
+            document.cookie = str;
+        }
+    </script>
+</body>
+
+</html>
